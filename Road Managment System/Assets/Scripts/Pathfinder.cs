@@ -7,17 +7,22 @@ using System.IO;
 
 public class Pathfinder : MonoBehaviour
 {
+    //transforms for the start and end position 
 	public Transform seeker, target;
 
+    //allows the pathfinder to add-on a graph
 	public Graph graph;
 
+    //list of the nodes in path
 	public List<Node> Path;
 
+    //gizmos 
 	public bool onlyPathGizmos;
 
 	//used for the gizmos start point
 	Vector3 snp;
 	Vector3 sp;
+
 	//used for the gizmos end point
 	Vector3 enp;
 	Vector3 ep;
@@ -124,7 +129,7 @@ public class Pathfinder : MonoBehaviour
 		Path = path;
 	}
 
-	float GetDistance(Node nodeA, Node nodeB)
+    public float GetDistance(Node nodeA, Node nodeB)
 	{
 		Vector3 direction = new Vector3
 			(
@@ -138,7 +143,7 @@ public class Pathfinder : MonoBehaviour
 		return distance;
 	}
 
-	float GetDistance(Node node, Vector3 pos)
+	public float GetDistance(Node node, Vector3 pos)
 	{
 		Vector3 direction = new Vector3
 			(
@@ -152,6 +157,7 @@ public class Pathfinder : MonoBehaviour
 		return distance;
 	}
 
+    //fuction visually represnts what the algorithm is doing 
 	void OnDrawGizmos()
 	{
 		if (onlyPathGizmos)

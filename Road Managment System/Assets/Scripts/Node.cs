@@ -12,7 +12,9 @@ public class Node : MonoBehaviour, IHeapItem<Node>
 
 	public Node parent;
 
-	int heapIdx;
+    public Pathfinder pathfinder;
+
+    int heapIdx;
 
 	public List<Node> connections;
 
@@ -56,6 +58,33 @@ public class Node : MonoBehaviour, IHeapItem<Node>
 		}
 		return -compare;
 	}
+
+   
+
+    public List<Node> GetSubnodes(Node other)
+    {
+        List<Node> subnodes = new List<Node>();
+
+        int divisions = 3;
+
+        // Find distance between this node and the other
+        float d = pathfinder.GetDistance(this, other);
+
+        // Divide distance by the divisions to get sub distance
+        float sd = (d / divisions);
+
+        // Add sub node at position of this node to the subnodes
+        
+
+
+        // Find position at next node using the 'sub distance'
+
+        // etc...
+
+        // Add the end node to the nodes
+
+        return subnodes;
+    }
 
 }
 

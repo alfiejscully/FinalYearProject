@@ -25,9 +25,20 @@ public class Movement : MonoBehaviour
 			{
 				List<Node> path = Pathfinder.Path;
 
+                int current = 0;
+
 				foreach (var node in path)
 				{
-					targets.Add(node.transform);
+                    List<Node> subnodes = node.GetSubnodes(path[current + 1]);
+
+                    foreach (var subnode in subnodes)
+                    {
+                        targets.Add(subnode.transform);
+                    }
+
+                    //targets.Add(node.transform);
+
+                    ++current;
 				}
 
 				GotPath = true;
