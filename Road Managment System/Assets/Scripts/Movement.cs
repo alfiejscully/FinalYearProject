@@ -15,7 +15,10 @@ public class Movement : MonoBehaviour
 
 	bool GotPath = false;
 
-	void Update ()
+    private List<Node> path;
+
+
+    void Update ()
 	{
 		//targets.Clear();
 
@@ -23,42 +26,46 @@ public class Movement : MonoBehaviour
 		{
 			if (!GotPath)
 			{
-				List<Node> path = Pathfinder.Path;
+				path = Pathfinder.Path;
 
-                int current = 0;
-
-				foreach (var node in path)
-				{
-                    List<Node> subnodes = node.GetSubnodes(path[current + 1]);
-
-                    foreach (var subnode in subnodes)
+                for (int i = 0; i < path.Count; i++)
+                {
+                    if (i == (path.Count - 1))
                     {
-                        targets.Add(subnode.transform);
+                        targets.Add(transform);
                     }
+                    else
+                    {
+                        List<Node> subnodes = path[i].GetSubnodes(path[i + 1]);
 
-                    //targets.Add(node.transform);
-
-                    ++current;
-				}
+                        foreach (var subnode in subnodes)
+                        {
+                            targets.Add(subnode.transform);
+                        }
+                    }
+                }
 
 				GotPath = true;
 			}
 
-			float x = Mathf.Abs((transform.position.x - targets[current].position.x));
-			float y = Mathf.Abs((transform.position.y - targets[current].position.y));
-			float z = Mathf.Abs((transform.position.z - targets[current].position.z));
+           // if (path.Count > 0 && current < path.Count - 1)
+           // {
+                float x = Mathf.Abs((transform.position.x - targets[current].position.x));
+                float y = Mathf.Abs((transform.position.y - targets[current].position.y));
+                float z = Mathf.Abs((transform.position.z - targets[current].position.z));
 
-			if ((x < 0.1f) &&
-				(y < 1.0f) && //works on the scale of the mesh for example if player is scle of 1 then set to 1, need to improve this
-				(z < 0.1f))
-			{
-				current = ++current;
-			}
-			else
-			{
-				Vector3 pos = Vector3.MoveTowards(transform.position, targets[current].position, speed * Time.deltaTime);
-				GetComponent<Rigidbody>().MovePosition(pos);
-			}
+                if ((x < 0.1f) &&
+                    (y < 1.0f) && //works on the scale of the mesh for example if player is scle of 1 then set to 1, need to improve this
+                    (z < 0.1f))
+                {
+                    current = ++current;
+                }
+                else
+                {
+                    Vector3 pos = Vector3.MoveTowards(transform.position, targets[current].position, speed * Time.deltaTime);
+                    GetComponent<Rigidbody>().MovePosition(pos);
+                }
+           // }
 		}
 	}
 }

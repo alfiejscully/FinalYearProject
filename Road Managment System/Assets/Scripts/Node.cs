@@ -12,8 +12,6 @@ public class Node : MonoBehaviour, IHeapItem<Node>
 
 	public Node parent;
 
-    public Pathfinder pathfinder;
-
     int heapIdx;
 
 	public List<Node> connections;
@@ -59,29 +57,54 @@ public class Node : MonoBehaviour, IHeapItem<Node>
 		return -compare;
 	}
 
-   
+    public float GetDistance(Node other)
+    {
+        Vector3 direction = new Vector3
+            (
+                GetPosition().x - other.GetPosition().x,
+                GetPosition().y - other.GetPosition().y,
+                GetPosition().z - other.GetPosition().z
+            );
+
+        float distance = direction.magnitude;
+
+        return distance;
+    }
 
     public List<Node> GetSubnodes(Node other)
     {
         List<Node> subnodes = new List<Node>();
 
+        // Total amount of divisions 
         int divisions = 3;
 
         // Find distance between this node and the other
-        float d = pathfinder.GetDistance(this, other);
+        float distance = GetDistance(other);
 
         // Divide distance by the divisions to get sub distance
-        float sd = (d / divisions);
+        float subdistance = (distance / divisions);
 
         // Add sub node at position of this node to the subnodes
-        
+        subnodes.Add(this);
 
+        // Calculate direction of vector between this node and other node
+        Vector3 direction = (other.transform.position - transform.position).normalized;
 
-        // Find position at next node using the 'sub distance'
+        // Find position at next node using the 'sub distance' & Multiply the direction by the 'sub distance'
+        Vector3 translationAmount = direction * subdistance;
 
-        // etc...
+        for (int i = 0; i < divisions; i++)
+        {
+            GameObject node = new GameObject();
 
-        // Add the end node to the nodes
+            node.AddComponent<Node>();
+
+            Vector3 translation = transform.position + (translationAmount * (i + 1));
+
+            node.transform.position = translation;
+
+            subnodes.Add(node.GetComponent<Node>());
+        }
 
         return subnodes;
     }

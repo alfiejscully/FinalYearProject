@@ -336,7 +336,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1971289772}
 --- !u!1 &122787292 stripped
@@ -365,7 +364,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1144777312}
 --- !u!1 &147060831
@@ -821,7 +819,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 2057893251}
   - {fileID: 1499232883}
@@ -909,7 +906,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 347651768}
 --- !u!1 &344405414 stripped
@@ -938,7 +934,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 325084285}
 --- !u!1 &345595551
@@ -1051,7 +1046,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 733778470}
   - {fileID: 423820491}
@@ -1365,7 +1359,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1301177544}
 --- !u!1001 &417467570
@@ -1536,7 +1529,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1575828190}
 --- !u!1 &437372836
@@ -1707,7 +1699,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1676131882}
 --- !u!1 &474866093
@@ -1909,7 +1900,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1676185996}
 --- !u!1001 &588896880
@@ -2138,7 +2128,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1233106641}
 --- !u!1 &678516918
@@ -2270,7 +2259,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 2018982116}
 --- !u!1 &746135422 stripped
@@ -2299,7 +2287,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1039735195}
 --- !u!1 &758630005
@@ -2703,7 +2690,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1285969381}
 --- !u!1 &856044011 stripped
@@ -2732,7 +2718,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 841997373}
   - {fileID: 122787297}
@@ -3083,7 +3068,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 122787297}
   - {fileID: 2126257357}
@@ -3252,7 +3236,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1013433395}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28, y: 2.453, z: 44.87}
+  m_LocalPosition: {x: -35.64, y: 2.453, z: 44.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3372,7 +3356,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1919785357}
   - {fileID: 677677591}
@@ -3397,7 +3380,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1346465796}
   - {fileID: 733778470}
@@ -3427,7 +3409,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1700750915}
 --- !u!1001 &1062649778
@@ -3824,7 +3805,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 53693462}
 --- !u!1 &1153594155
@@ -4137,7 +4117,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1861233384}
   - {fileID: 1059410735}
@@ -4168,7 +4147,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 402685536}
 --- !u!1 &1269854838 stripped
@@ -4197,7 +4175,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1693341652}
 --- !u!1 &1271004291 stripped
@@ -4226,7 +4203,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1059410735}
   - {fileID: 1570129189}
@@ -4315,7 +4291,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 300113131}
 --- !u!1 &1285969376 stripped
@@ -4344,7 +4319,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1277828180}
 --- !u!1 &1301177539 stripped
@@ -4373,7 +4347,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 2126257357}
   - {fileID: 841997373}
@@ -4747,7 +4720,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 2072524725}
 --- !u!1001 &1361358936
@@ -4834,7 +4806,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1057198594}
 --- !u!1001 &1385161197
@@ -5084,7 +5055,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 344405419}
 --- !u!1001 &1545536445
@@ -5171,7 +5141,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1816757427}
 --- !u!1 &1573859025
@@ -5284,7 +5253,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 746135427}
 --- !u!1001 &1583324020
@@ -5429,7 +5397,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 464399816}
 --- !u!1001 &1618732669
@@ -5516,7 +5483,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1631173604}
 --- !u!1 &1631173599 stripped
@@ -5545,7 +5511,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1376499517}
 --- !u!1001 &1639783145
@@ -5832,7 +5797,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1006050242}
 --- !u!1 &1676185991 stripped
@@ -5861,7 +5825,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1499232883}
   - {fileID: 1616712172}
@@ -5891,7 +5854,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 2057893251}
   - {fileID: 1616712172}
@@ -5979,7 +5941,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 677677591}
   - {fileID: 1631080393}
@@ -6267,7 +6228,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 423820491}
   - {fileID: 1346465796}
@@ -6439,7 +6399,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 856044016}
 --- !u!1 &1881618733
@@ -6797,7 +6756,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 2137911722}
 --- !u!1001 &1967190506
@@ -6942,7 +6900,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1631080393}
   - {fileID: 1919785357}
@@ -7030,7 +6987,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 584476102}
   - {fileID: 1861233384}
@@ -7119,7 +7075,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1202326395}
 --- !u!1 &2072524720 stripped
@@ -7148,7 +7103,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1269854843}
 --- !u!1001 &2073449532
@@ -7235,7 +7189,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1271004296}
 --- !u!1 &2137911717 stripped
@@ -7264,7 +7217,6 @@ MonoBehaviour:
   gCost: 0
   hCost: 0
   parent: {fileID: 0}
-  pathfinder: {fileID: 0}
   connections:
   - {fileID: 1570129189}
   - {fileID: 584476102}
