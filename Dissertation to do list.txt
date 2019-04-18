@@ -1,0 +1,12 @@
+Alfie implementation:
+- refine corner motion for cars through implementing curves (Bezier)
+	- approximate curve with line segments
+		- bezier curve
+- define destinations for cars
+- manage multiple cars
+- traffic light managment system 
+	- roundabouts
+
+
+Alfie write up:
+EVERYTHING which can be written up by then for the dissertation/report MUST be written up :-)
