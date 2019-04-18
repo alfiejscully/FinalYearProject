@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Bezier.cs" />
      <Compile Include="Assets\Scripts\Graph.cs" />
      <Compile Include="Assets\Scripts\Heap.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
