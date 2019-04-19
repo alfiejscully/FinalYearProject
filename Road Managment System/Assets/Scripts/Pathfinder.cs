@@ -166,10 +166,54 @@ public class Pathfinder : MonoBehaviour
 
 			foreach (var node in graph.nodes)
 			{
-				foreach (var connection in node.connections)
-				{
-					Gizmos.DrawLine(node.GetPosition(), connection.GetPosition());
-				}
+                List<Transform> targets = new List<Transform>();
+
+                for (int u = 0; u < node.connections.Count; u++)
+                {
+                    if (u == (node.connections.Count - 1))
+                    {
+                        //targets.Add(transform);
+                        Gizmos.DrawLine(node.GetPosition(), node.connections[0].GetPosition());
+                    }
+                    else
+                    {
+                        List<Node> subnodes = node.connections[u].GetSubnodes(node.connections[u + 1]);
+
+                        for (int y = 1; y < subnodes.Count; y++)
+                        {
+                            Gizmos.DrawLine(subnodes[y - 1].GetPosition(), subnodes[y].GetPosition());
+                        }
+
+                        //foreach (var subnode in subnodes)
+                        //{
+                        //    //targets.Add(subnode.transform);
+                        //    Gizmos.DrawLine(node.GetPosition(), node.connections[0].GetPosition());
+                        //}
+                    }
+                }
+
+                //foreach (var target in targets)
+                //{
+                //    Gizmos.DrawLine(node.GetPosition(), connection.GetPosition());
+                //}
+
+    //            foreach (var connection in node.connections)
+				//{
+    //                List<Node> subnodes = node.GetSubnodes(connection);
+
+
+
+
+
+
+
+    //                foreach (var subnode in subnodes)
+    //                {
+    //                    Gizmos.DrawLine(node.GetPosition(), connection.GetPosition());
+    //                }
+
+    //                //Gizmos.DrawLine(node.GetPosition(), connection.GetPosition());
+				//}
 			}
 
 			Gizmos.color = Color.red;
