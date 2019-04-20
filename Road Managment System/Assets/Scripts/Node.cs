@@ -97,8 +97,8 @@ public class Node : MonoBehaviour, IHeapItem<Node>
 
         Vector3 h = (difference / 2.0f);
 
-        Vector3 y = new Vector3(0.0f, 1.0f, 0.0f);
-        //Vector3 y = transform.right;
+        //Vector3 y = new Vector3(0.0f, 1.0f, 0.0f);
+        Vector3 y = transform.forward;
 
         Vector3 cross = Vector3.Cross(h, y);
 
@@ -111,6 +111,7 @@ public class Node : MonoBehaviour, IHeapItem<Node>
             node.AddComponent<Node>();
 
             //Vector3 translation = transform.position + (translationAmount * (i + 1));
+            
             Vector3 translation = positions[i];
 
             node.transform.position = translation;
@@ -125,20 +126,16 @@ public class Node : MonoBehaviour, IHeapItem<Node>
     {
         Vector3[] positions = new Vector3[numPoints];
 
-        //stores the line
-        //LineRenderer line;
-
         for (int i = 1; i < numPoints + 1; i++)
         {
             float t = i / (float)numPoints;
             positions[i - 1] = CalculateQuadBezierPoint(t, point0.position, point1, point2.position);
         }
-        //line.SetPositions(pos);
 
         return positions;
     }
 
-    //points are plotted by this function 
+  
     public Vector3 CalculateQuadBezierPoint(float t, Vector3 _p0, Vector3 _p1, Vector3 _p2)
     {
         //quadratic function equation
