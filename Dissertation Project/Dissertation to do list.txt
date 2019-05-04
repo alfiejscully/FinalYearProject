@@ -1,0 +1,24 @@
+Alfie implementation:
+- refine corner motion for cars through implementing curves (Bezier) DONE 
+	- approximate curve with line segments DONE 
+		- bezier curve DONE
+
+- get the path to carry on tracing a new path after end target is met
+ 
+- manage multiple cars
+- traffic light managment system 
+	- speed lanes (Speed lane is 20 so ai goes 20 in speed)
+
+
+
+Alfie write up:
+- need to start the write
+	- having issues with understand what needs to be written up.
+
+NEED TO INSTALL UNITY 2017.4.5f1
+- prevent missing nodes prefabs and city map not working etc....
+
+Behaviour trees:
+https://forum.unity.com/threads/any-behavior-tree-guides-and-examples.394641/
+http://www.gamasutra.com/blogs/ChrisSimpson/20140717/221339/Behavior_trees_for_AI_How_they_work.php
+	-http://www.pandabehaviour.com/?page_id=23
